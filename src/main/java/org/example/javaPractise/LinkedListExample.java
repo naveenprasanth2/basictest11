@@ -1,5 +1,7 @@
 package org.example.javaPractise;
 
+import java.util.ArrayList;
+
 public class LinkedListExample<T>{
     public Node<T> head = null;
     public Node<T> tail = null;
@@ -54,6 +56,7 @@ public class LinkedListExample<T>{
             System.out.println(current.element);
             current = current.next;
         }
+
     
     }
 }
