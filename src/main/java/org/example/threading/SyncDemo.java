@@ -1,16 +1,12 @@
 package org.example.threading;
 
-
-import lombok.extern.log4j.Log4j2;
-
 import java.util.stream.IntStream;
 
-@Log4j2
 class Counter {
-   volatile int count;
+    volatile int count;
 
     public synchronized void incrementCount() {
-            count++;
+        count++;
     }
 }
 
