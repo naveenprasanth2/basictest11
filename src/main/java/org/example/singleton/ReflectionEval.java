@@ -11,7 +11,15 @@ import java.util.stream.Stream;
 public class ReflectionEval {
     public static void main(String[] args) throws Exception {
         Employee employee = new Employee(1);
-        MethodAnnotation.class.getAnnotation(MethodAnnotation.class);
+        Method[] methods = employee.getClass().getDeclaredMethods();
+        for (Method method : methods){
+            if(method.isAnnotationPresent(MethodAnnotation.class)){
+                MethodAnnotation annotation = method.getAnnotation(MethodAnnotation.class);
+                for (int i = 0; i<annotation.repeat(); i++){
+                    System.out.println("summa");
+                }
+            }
+        }
     }
 
     public static void testing() {

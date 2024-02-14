@@ -1,4 +1,4 @@
-package org.example.singleton;
+package org.example.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MethodAnnotation {
-    int repeat() default 5;
+public @interface MyMethodAnnotation {
+    int times() default 5;
 }

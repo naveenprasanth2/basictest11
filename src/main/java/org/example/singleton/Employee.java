@@ -14,7 +14,7 @@ public class Employee {
         this.id = id;
     }
 
-    @MethodAnnotation(repeat = 5)
+    @MethodAnnotation()
     public void test() {
         System.out.println("summa");
     }
