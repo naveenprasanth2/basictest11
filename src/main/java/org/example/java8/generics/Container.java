@@ -11,9 +11,9 @@ public class Container<T> implements Comparable<T> {
         return value;
     }
 
-    public boolean compareContainers(Container<T> container1, Container<T> container2) {
-        return container1.compareTo(container2);
-    }
+//    public boolean compareContainers(Container<T> container1, Container<T> container2) {
+////        return container1.compareTo(container2);
+//    }
 
     @Override
     public int compareTo(T o) {
