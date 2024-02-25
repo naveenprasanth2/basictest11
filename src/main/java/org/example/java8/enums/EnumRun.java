@@ -2,10 +2,10 @@ package org.example.java8.enums;
 
 public class EnumRun {
     public static void main(String[] args) {
-        EnumWeekDays enumWeekDays = EnumWeekDays.FRIDAY;
+        EnumWeekDays enumWeekDays = EnumWeekDays.MONDAY;
         System.out.println(enumWeekDays);
         switch (enumWeekDays) {
-            case EnumWeekDays.MONDAY -> System.out.println("monday");
+            case EnumWeekDays.MONDAY -> System.out.println(STR."monday \{EnumWeekDays.MONDAY.value}");
             case EnumWeekDays.TUESDAY -> System.out.println("tuesday");
             case EnumWeekDays.WEDNESDAY -> System.out.println("wednesday");
             case EnumWeekDays.THURSDAY -> System.out.println("thursday");
