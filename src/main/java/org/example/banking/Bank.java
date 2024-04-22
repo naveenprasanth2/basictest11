@@ -36,7 +36,6 @@ public class Bank {
         bank.addAccount(bankAccount2);
 
         bank.checkData();
-        ;
         bank.transferAmount(bankAccount1, bankAccount2, 1);
         bank.checkData();
     }
